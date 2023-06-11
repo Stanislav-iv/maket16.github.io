@@ -1,0 +1,196 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.header {
+  background-color: $header-stack;
+}
+.upperMenu__upNavigation {
+  list-style-type: none;
+  display: flex;
+  min-height: 88px;
+  border-bottom: 1px solid $border-line;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media screen and (min-width: 1120px) {
+    padding-left: 0;
+    padding-right: 32px;
+    background-color: $font-stack;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .title__line1 {
+    display: none;
+
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      border-left: 4px solid $border-Boldline;
+      height: 40px;
+      border-radius: 4px 0px 0px 4px;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+  .title__cap1 {
+    display: none;
+
+    @media screen and (min-width: 1120px) {
+      display: flex;
+      font-family: 'TT Lakes Bold';
+      color: $title-text;
+      font-size: 28px;
+      margin-left: 12px;
+    }
+  }
+  .upperMenu__text1 {
+    display: none;
+
+    @media screen and (min-width: 1120px) {
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      color: $title-text;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  .upperMenu__checkstatus {
+    margin-left: 16px;
+
+    @media screen and (min-width: 1120px) {
+      align-items: center;
+      display: flex;
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+  .upperMenu__text {
+    display: none;
+
+    @media screen and (min-width: 1120px) {
+      font-family: 'TT Lakes Medium';
+      font-size: 16px;
+      color: $title-text;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  .upperMenu__repair {
+    margin-right: 0;
+    margin-left: 20px;
+
+    @media screen and (min-width: 1120px) {
+      align-items: center;
+      display: flex;
+      margin-right: 32px;
+      margin-left: auto;
+    }
+  }
+  .vl1 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      border-left: 2px solid $vert-line;
+      height: 32px;
+      border-radius: 1px;
+      margin-right: 0;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .upperMenu__profile {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .upperMenu__chat {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-right: 0;
+      margin-left: 16px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .upperMenu__call {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .vl {
+    border-left: 2px solid $vert-line;
+    height: 32px;
+    border-radius: 1px;
+    margin-right: 0;
+    margin-left: auto;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .upperMenu__logo {
+    margin-right: 0;
+    margin-left: 16.73px;
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .vl2 {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      border-left: 2px solid $vert-line;
+      height: 32px;
+      border-radius: 1px;
+      margin-right: 0;
+      margin-left: 20px;
+    }
+
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+  .upperMenu__burger {
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+}

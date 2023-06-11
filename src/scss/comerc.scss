@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.comerc {
+  display: inline-block;
+  max-width: 421px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 47px;
+  .comerc__text {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    color: $title-text;
+    line-height: 20px;
+  }
+  .comerc__link {
+    text-decoration: none;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: $title-text;
+    line-height: 24px;
+  }
+  .comerc__img {
+    margin-left: 8px;
+  }
+}

@@ -1,0 +1,215 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.shadow {
+  width: 320px;
+  background-color: $header-stack;
+
+  @media screen and (max-width: 1120px) {
+    display: none;
+  }
+}
+
+.mask__Side {
+  @media screen and (min-width: 361px) {
+    position: absolute;
+    left: 0%;
+    right: -0.13%;
+    top: 0%;
+    bottom: 0%;
+    height: 2200px;
+    z-index: 3;
+    background: $header-stack;
+    mix-blend-mode: normal;
+    opacity: 0.96;
+  }
+}
+.open__Side.open__Side1 {
+  @media screen and (max-width: 359px) {
+    display: block;
+    width: 320px;
+  }
+  @media screen and (min-width: 360px) {
+    display: block;
+    width: 360px;
+  }
+  @media screen and (min-width: 361px) {
+    position: absolute;
+    display: block;
+
+    width: 320px;
+    z-index: 5;
+    box-shadow: -2px 0 4px 0 rgba(69, 79, 126, 0.02),
+      16px 0 52px 0 rgba(14, 24, 80, 0.2);
+  }
+}
+.Close__main {
+  @media screen and (max-width: 360px) {
+    display: none;
+  }
+}
+
+.headerSide {
+  margin-bottom: 46.46px;
+  padding-top: 18.73px;
+  max-width: 360px;
+  background-color: $header-stack;
+}
+.sideMenu__upNavigation {
+  list-style-type: none;
+  display: flex;
+
+  align-items: center;
+  margin: 0;
+  padding: 0 24px;
+  .sideMenu__burger {
+    @media screen and (min-width: 1120px) {
+      display: none;
+    }
+  }
+
+  .sideMenu__burger:hover {
+    filter: drop-shadow(0 0 10px rgba(21, 9, 9, 0.811));
+    transition: 2s;
+  }
+  .sideMenu__logo {
+    margin-left: 16.73px;
+  }
+  .sideMenu__search {
+    margin-left: 78.73px;
+  }
+  .sideMenu__search:hover {
+    filter: drop-shadow(0 0 10px rgba(21, 9, 9, 0.811));
+    transition: 2s;
+  }
+}
+
+.fonSide {
+  width: 320px;
+  .fonSide__nav {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 268px;
+  }
+}
+
+.LateralMenu {
+  a {
+    line-height: 24px;
+    font-family: 'TT Lakes Medium';
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: $title-text;
+  }
+  .LateralMenu__downNavigation {
+    padding: 0;
+    margin: 0;
+  }
+  .LateralMenu__text {
+    margin-left: 24px;
+    margin-bottom: 32px;
+  }
+  .LateralMenu__submenu:focus {
+    color: $slide-text;
+  }
+  .LateralMenu__submenu:focus::before {
+    content: '';
+    margin-left: -24px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    border-left: 4px solid $border-Boldline;
+    height: 32px;
+    width: 4px;
+    border-radius: 4px 0px 0px 4px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .LateralMenu__downNavigation {
+    list-style-type: none;
+  }
+}
+
+.downMenu__downNav {
+  list-style-type: none;
+  display: flex;
+
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 24px;
+
+  .downMenu__call {
+    margin-right: 16px;
+  }
+  .downMenu__call:hover {
+    filter: drop-shadow(0 0 10px rgba(21, 9, 9, 0.811));
+    transition: 2s;
+  }
+  .downMenu__chat {
+    margin-right: 16px;
+  }
+  .downMenu__chat:hover {
+    filter: drop-shadow(0 0 10px rgba(21, 9, 9, 0.811));
+    transition: 2s;
+  }
+  .downMenu__profile:hover {
+    filter: drop-shadow(0 0 10px rgba(21, 9, 9, 0.811));
+    transition: 2s;
+  }
+}
+.inform {
+  padding: 0 24px;
+
+  .inform__mail {
+    margin-bottom: 12px;
+
+    display: block;
+    line-height: 24px;
+    font-family: 'TT Lakes Medium';
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: $title-text;
+  }
+  .inform__number {
+    display: block;
+    line-height: 32px;
+    font-family: 'TT Lakes Bold';
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: $title-text;
+    margin-bottom: 40px;
+  }
+  .inform__lang {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+  .inform__lang a {
+    line-height: 24px;
+    font-family: 'TT Lakes Medium';
+    font-weight: normal;
+    font-size: 16px;
+    text-decoration: none;
+    color: $title-text;
+  }
+  .inform__ln:focus {
+    color: $slide-text;
+  }
+  .inform__ru {
+    margin-right: 7px;
+  }
+  .inform__en {
+    margin-right: 7px;
+  }
+}

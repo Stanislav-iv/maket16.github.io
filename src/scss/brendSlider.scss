@@ -1,0 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.BrandHeader {
+  background-color: $header-stack;
+  border-top: 1px solid $border-line;
+
+  .BrandHeader__title {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    color: $slide-text;
+    text-transform: uppercase;
+    line-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+    margin-left: 16px;
+  }
+}
+.brand {
+  margin-bottom: 32px;
+}
+.brand__Navigation {
+  list-style-type: none;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0;
+  margin-top: 16px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .brand__button {
+    background-color: $header-stack;
+    border: 1px solid $vert-line;
+    border-radius: 6px;
+    width: 224px;
+    height: 72px;
+    margin-left: 16px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+      margin-left: 24px;
+    }
+    @media screen and (max-width: 768px) {
+      &:nth-child(n + 15) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1120px) {
+      &:nth-child(n + 7) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1120px) {
+      &:nth-child(n + 9) {
+        display: none;
+      }
+    }
+
+    // @media screen and (max-width: 768px) {
+    //   &:nth-child(n + 15) {
+    //     display: none;
+    //   }
+    // }
+    //   @media screen and (max-width: 1119px) {
+    //     &:nth-child(n + 7) {
+    //       display: none;
+    //     }
+    //   }
+    //   @media screen and (min-width: 1120px) {
+    //     &:nth-child(n + 9) {
+    //       display: none;
+    //     }
+    //   }
+  }
+  .brand__link {
+    width: 224px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand__img {
+    padding-left: 16px;
+  }
+  .brand__go {
+    padding-right: 16px;
+  }
+
+  .brand__button.is-visible {
+    display: block;
+  }
+}
+.btn {
+  margin-left: 39px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  .btn__more {
+    background-color: $btn-col;
+    border: none;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    color: $title-text;
+    line-height: 24px;
+  }
+}
+.swiper-pagination {
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background-color: $swiper-bullet;
+  width: 12px;
+  height: 12px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

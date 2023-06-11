@@ -1,0 +1,203 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.priceHeader {
+  background-color: $header-stack;
+  border-top: 1px solid $border-line;
+  margin-bottom: 32px;
+
+  .priceHeader__title {
+    font-family: 'TT Lakes Regular';
+    font-size: 16px;
+    color: $slide-text;
+    text-transform: uppercase;
+    line-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+    margin-left: 16px;
+  }
+}
+
+.price {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .price__Navigation {
+    list-style-type: none;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 16px;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+    .price__button {
+      display: flex;
+      flex-direction: column;
+      background-color: $header-stack;
+      border: 0px solid $font-stack;
+      border-radius: 6px;
+      width: 260px;
+      height: 200px;
+      margin-left: 8px;
+
+      // @media screen and (min-width: 768px) {
+      //   margin-bottom: 16px;
+      //   margin-left: 24px;
+      // }
+
+      // @media screen and (max-width: 768px) {
+      //   &:nth-child(n + 15) {
+      //     display: none;
+      //   }
+      // }
+      // @media screen and (min-width: 768px) and (max-width: 1120px) {
+      //   &:nth-child(n + 4) {
+      //     display: none;
+      //   }
+      // }
+      // @media screen and (min-width: 1120px) {
+      //   &:nth-child(n + 9) {
+      //     display: none;
+      //   }
+      // }
+    }
+    .price__BLtext {
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      color: $slide-text;
+      line-height: 16px;
+      margin: 16px;
+      margin-bottom: 4px;
+    }
+    .price__text {
+      font-family: 'TT Lakes Regular';
+      font-size: 14px;
+      color: $title-text;
+      line-height: 18px;
+      margin: 0;
+      margin-left: 16px;
+    }
+    .price__BLtext_size {
+      margin-top: 34px;
+    }
+
+    .price__go {
+      position: relative;
+      left: 120px;
+      bottom: 30px;
+      width: 119px;
+    }
+
+    // .price__button.is-visible {
+    //   display: block;
+    // }
+  }
+}
+
+// .priceBtn {
+//   margin-left: 39px;
+
+//   @media screen and (max-width: 767px) {
+//     display: none;
+//   }
+//   .priceBtn__more {
+//     background-color: $btn-col;
+//     border: none;
+//     font-family: 'TT Lakes Medium';
+//     font-size: 16px;
+//     color: $title-text;
+//     line-height: 24px;
+//   }
+// }
+.priceFull {
+  display: flex;
+  flex-direction: column;
+  min-width: 720px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  .priceFull__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .priceFull__CHtitle {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    color: $slide-text;
+    line-height: 16px;
+    .priceFull__textD {
+      width: 119px;
+    }
+
+    .priceFull__text:nth-child(1) {
+      min-width: 348px;
+      max-width: 684px;
+    }
+    .priceFull__text:nth-child(2) {
+      min-width: 80px;
+      max-width: 416px;
+    }
+    .priceFull__text:nth-child(3) {
+      min-width: 81px;
+      max-width: 417px;
+    }
+  }
+
+  .priceFull__list {
+    background-color: $header-stack;
+    border: 0px solid $header-stack;
+    border-radius: 6px;
+    min-width: 720px;
+    height: 324px;
+    margin: 0;
+    padding: 0;
+
+    .priceFull__Ltext:nth-child(1) {
+      min-width: 348px;
+      max-width: 684px;
+    }
+    .priceFull__Ltext:nth-child(2) {
+      min-width: 80px;
+      max-width: 416px;
+    }
+    .priceFull__Ltext:nth-child(3) {
+      min-width: 81px;
+      max-width: 417px;
+    }
+  }
+  .priceFull__str {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $vert-line;
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    color: $title-text;
+    line-height: 18px;
+    min-width: 688px;
+    height: 64px;
+    align-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
