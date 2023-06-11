@@ -13,9 +13,9 @@ let swiper = new Swiper('.swiper', {
   spaceBetween: 16
 })
 let screen = window.matchMedia('(max-width: 767px)')
-if (!screen.matches) {
-  swiper.destroy()
-}
+// if (!screen.matches) {
+//   swiper.destroy()
+// }
 let btnMore = document.querySelector('.btn__more')
 let brandLength = document.querySelectorAll('.brand__button').length
 btnMore.addEventListener('click', () => {
